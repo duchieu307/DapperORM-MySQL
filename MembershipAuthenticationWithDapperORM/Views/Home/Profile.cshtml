@@ -7,3 +7,8 @@
 
 <h3>Status: @(User.Identity.IsAuthenticated ? User.Identity.Name : "Guest")</h3>
 
+<a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="Index">Danh sách xe</a>
+
+<form asp-controller="Account" asp-action="Logout" method="post">
+    <button class="btn btn-primary btn-lg">Logout</button>
+</form>

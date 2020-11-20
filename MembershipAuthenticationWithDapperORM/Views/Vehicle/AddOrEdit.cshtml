@@ -1,0 +1,55 @@
+﻿@model MembershipAuthenticationWithDapperORM.Models.Vehicle
+
+@{
+    ViewData["Title"] = "Tạo hoặc xửa xe";
+}
+
+<h1>Tạo hoặc sửa xe mới</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(model => model.id)
+            <div class="form-group">
+                <label asp-for="vehicle_type_id" class="control-label">Mã xe</label>
+                <input asp-for="vehicle_type_id" class="form-control" />
+                <span asp-validation-for="vehicle_type_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="brand" class="control-label">Nhãn hiệu</label>
+                <input asp-for="brand" class="form-control" />
+                <span asp-validation-for="brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="model" class="control-label">Kiểu xe</label>
+                <input asp-for="model" class="form-control" />
+                <span asp-validation-for="model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lincese_number" class="control-label">Số đăng ký</label>
+                <input asp-for="lincese_number" class="form-control" />
+                <span asp-validation-for="lincese_number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="capacity" class="control-label">Số chỗ ngồi</label>
+                <input asp-for="capacity" class="form-control" />
+                <span asp-validation-for="capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="supplier_id" class="control-label">Mã nhà cung cấp</label>
+                <input asp-for="supplier_id" class="form-control" />
+                <span asp-validation-for="supplier_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

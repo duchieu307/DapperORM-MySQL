@@ -5,11 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MembershipAuthenticationWithDapperORM.Models;
+using MembershipAuthenticationWithDapperORM.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
-
+using MembershipAuthenticationWithDapperORM.Models;
 
 namespace MembershipAuthenticationWithDapperORM.Controllers
 {
@@ -32,6 +32,7 @@ namespace MembershipAuthenticationWithDapperORM.Controllers
 
         
         [Authorize]
+        [HttpGet("Profile")]
         public IActionResult Profile()
         {
             var currentUser = User.FindFirst(ClaimTypes.NameIdentifier);

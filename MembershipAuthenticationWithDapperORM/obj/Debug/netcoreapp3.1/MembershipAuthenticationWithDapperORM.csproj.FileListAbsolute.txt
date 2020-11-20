@@ -130,3 +130,5 @@ C:\Users\duchi\source\repos\MembershipAuthenticationWithDapperORM\MembershipAuth
 C:\Users\duchi\source\repos\MembershipAuthenticationWithDapperORM\MembershipAuthenticationWithDapperORM\obj\Debug\netcoreapp3.1\MembershipAuthenticationWithDapperORM.csproj.CoreCompileInputs.cache
 C:\Users\duchi\source\repos\MembershipAuthenticationWithDapperORM\MembershipAuthenticationWithDapperORM\obj\Debug\netcoreapp3.1\MembershipAuthenticationWithDapperORM.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\duchi\source\repos\MembershipAuthenticationWithDapperORM\MembershipAuthenticationWithDapperORM\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\duchi\source\repos\MembershipAuthenticationWithDapperORM\MembershipAuthenticationWithDapperORM\obj\Debug\netcoreapp3.1\Razor\Views\Vehicle\Index.cshtml.g.cs
+C:\Users\duchi\source\repos\MembershipAuthenticationWithDapperORM\MembershipAuthenticationWithDapperORM\obj\Debug\netcoreapp3.1\Razor\Views\Vehicle\AddOrEdit.cshtml.g.cs

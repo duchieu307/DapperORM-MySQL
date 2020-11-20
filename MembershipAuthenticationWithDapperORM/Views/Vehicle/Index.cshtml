@@ -1,0 +1,68 @@
+﻿@model IEnumerable<MembershipAuthenticationWithDapperORM.Models.Vehicle>
+
+@{
+    ViewData["Title"] = "Danh sách xe";
+}
+
+<p>
+    <a asp-action="AddOrEdit">Tạo xe mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vehicle_type_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lincese_number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.supplier_id)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vehicle_type_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lincese_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.supplier_id)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "AddOrEdit", new {  id=item.id }) |
+                @Html.ActionLink("Delete", "DeleteVehicle", new {  id=item.id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
